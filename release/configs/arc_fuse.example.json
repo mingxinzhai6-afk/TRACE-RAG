@@ -1,0 +1,16 @@
+{
+  "max_rounds": 3,
+  "top_k": 5,
+  "rrf_k": 60,
+  "graph_weight": 1.0,
+  "text_weight": 1.0,
+  "n_judges": 3,
+  "n_voters": 3,
+  "judge_score_threshold": 3.0,
+  "use_routing": true,
+  "use_regeneration": true,
+  "use_critic": true,
+  "use_commendor": true,
+  "use_normalizer": true,
+  "use_disambiguation": true
+}

@@ -1,0 +1,26 @@
+dataset	model	pair	baseline	baseline_f1	newg	newg_f1	delta_f1
+MuSiQue	gemini-2.5-flash-lite	tog+bm25	ToG	7.71	NewG tog+bm25	30.26	+22.55
+MuSiQue	gemini-2.5-flash-lite	tog+vdb	ToG	7.71	NewG tog+vdb	26.94	+19.23
+PopQA	gemini-2.5-flash-lite	tog+bm25	ToG	11.97	NewG tog+bm25	25.97	+14.00
+PopQA	gemini-2.5-flash-lite	tog+vdb	ToG	11.97	NewG tog+vdb	24.71	+12.74
+MuSiQue	deepseek-v3.2	hippo+vdb	HippoRAG	17.28	NewG hippo+vdb	30.01	+12.73
+MuSiQue	deepseek-v3.2	hippo+bm25	HippoRAG	17.28	NewG hippo+bm25	28.42	+11.14
+PopQA	deepseek-v3.2	raptor+bm25	RAPTOR	17.78	NewG raptor+bm25	27.41	+9.63
+PopQA	gemini-2.5-flash-lite	raptor+bm25	RAPTOR	16.55	NewG raptor+bm25	25.32	+8.77
+MuSiQue	gemini-2.5-flash-lite	hippo+bm25	HippoRAG	18.13	NewG hippo+bm25	26.37	+8.24
+PopQA	gpt-4o-mini	raptor+bm25	RAPTOR	17.33	NewG raptor+bm25	25.50	+8.17
+MuSiQue	gpt-4o-mini	tog+vdb	ToG	21.55	NewG tog+vdb	29.13	+7.58
+MuSiQue	gpt-4o-mini	tog+bm25	ToG	21.55	NewG tog+bm25	28.98	+7.43
+PopQA	deepseek-v3.2	raptor+vdb	RAPTOR	17.78	NewG raptor+vdb	25.09	+7.31
+MuSiQue	gpt-4o-mini	hippo+bm25	HippoRAG	24.90	NewG hippo+bm25	31.77	+6.87
+PopQA	gpt-4o-mini	raptor+vdb	RAPTOR	17.33	NewG raptor+vdb	23.50	+6.17
+PopQA	gemini-2.5-flash-lite	raptor+vdb	RAPTOR	16.55	NewG raptor+vdb	22.41	+5.86
+MuSiQue	gemini-2.5-flash-lite	hippo+vdb	HippoRAG	18.13	NewG hippo+vdb	23.40	+5.27
+MuSiQue	gpt-4o-mini	raptor+bm25	RAPTOR	23.76	NewG raptor+bm25	28.80	+5.04
+MuSiQue	gpt-4o-mini	hippo+vdb	HippoRAG	24.90	NewG hippo+vdb	28.59	+3.69
+PopQA	deepseek-v3.2	hippo+bm25	HippoRAG	27.34	NewG hippo+bm25	29.78	+2.44
+MuSiQue	gemini-2.5-flash-lite	raptor+bm25	RAPTOR	20.99	NewG raptor+bm25	23.24	+2.25
+MuSiQue	deepseek-v3.2	tog+bm25	ToG	30.06	NewG tog+bm25	31.44	+1.38
+MuSiQue	deepseek-v3.2	tog+vdb	ToG	30.06	NewG tog+vdb	31.44	+1.38
+PopQA	deepseek-v3.2	hippo+vdb	HippoRAG	27.34	NewG hippo+vdb	28.39	+1.05
+PopQA	gpt-4o-mini	hippo+bm25	HippoRAG	28.24	NewG hippo+bm25	29.06	+0.82

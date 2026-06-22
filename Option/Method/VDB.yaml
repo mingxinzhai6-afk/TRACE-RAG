@@ -1,0 +1,41 @@
+################################# Text Baseline: Entity VDB #################################
+# Entity-vector retrieval followed by entity-occurrence chunk retrieval.
+#
+# This matches the text_method=vdb control used by NewG.
+
+use_entities_vdb: True
+use_relations_vdb: False
+use_subgraphs_vdb: False
+use_entity_link_chunk: False
+enable_graph_augmentation: False
+
+index_name: er_graph_colbert
+vdb_type: faiss
+
+chunk:
+  chunk_token_size: 1200
+  chunk_overlap_token_size: 100
+  token_model: gpt-3.5-turbo
+  chunk_method: chunking_by_token_size
+
+graph:
+  enable_edge_keywords: False
+  graph_type: er_graph
+  force: False
+  extract_two_step: True
+  max_gleaning: 1
+  enable_entity_description: False
+  enable_entity_type: False
+  enable_edge_description: False
+  enable_edge_name: True
+
+retriever:
+  query_type: vdb
+  top_k: 10
+
+query:
+  query_type: qa
+  only_need_context: False
+  response_type: short-form
+  top_k: 10
+  local_max_token_for_text_unit: 4000

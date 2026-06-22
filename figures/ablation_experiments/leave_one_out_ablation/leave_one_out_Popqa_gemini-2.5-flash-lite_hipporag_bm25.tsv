@@ -1,0 +1,9 @@
+variant	label	n	accuracy	em	precision	recall	f1	source
+full	Full NewG	200	59.50	58.50	59.83	21.69	27.50	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite\Results\results.score.jsonl
+no_router	w/o Router	200	60.00	58.00	59.83	21.85	27.64	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_router\Results\results.score.jsonl
+no_regen	w/o Re-Generator	200	61.00	60.50	61.58	22.12	28.13	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_regen\Results\results.score.jsonl
+no_critic	w/o Critic	200	57.00	56.50	57.58	20.86	26.46	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_critic\Results\results.score.jsonl
+no_commendor	w/o Commendor	200	58.50	57.50	58.83	21.57	27.28	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_abl_no_commendor\Results\results.score.jsonl
+no_normalizer	w/o Answer Normalizer	200	66.50	20.00	38.37	25.88	26.05	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_abl_critic\Results\results.score.jsonl
+no_disambiguation	w/o Entity Disambiguation	200	60.00	59.00	60.33	21.73	27.58	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_disambiguation\Results\results.score.jsonl
+single_agent	Single judge/voter	200	60.00	58.50	60.08	21.94	27.81	output\datasets\Popqa\NewG_hipporag_bm25_gemini-2.5-flash-lite_abl_single_agent\Results\results.score.jsonl

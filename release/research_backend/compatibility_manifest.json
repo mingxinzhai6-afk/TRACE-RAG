@@ -1,0 +1,63 @@
+﻿{
+    "name":  "ARC-Fuse DIGIMON compatibility manifest",
+    "upstream_url":  "https://github.com/JayLZhou/GraphRAG",
+    "upstream_head_checked":  "4e87938e46f90f3616fb27f955e8b2dc43743bde",
+    "note":  "Hashes describe the locally modified DIGIMON-derived workspace used for the paper experiments.",
+    "files":  [
+                  {
+                      "path":  "Core/GraphRAG.py",
+                      "sha256":  "557a92f9d9cb5719284b6bb262bb0dfb8e9e246ddb73630e64ec96c9e1c6918c",
+                      "size":  13425
+                  },
+                  {
+                      "path":  "Core/Query/PPRQuery.py",
+                      "sha256":  "0fac8e22b6213bea8a3ee86dfc920f943070c7311362a35cf18f4e347fc7f4df",
+                      "size":  6611
+                  },
+                  {
+                      "path":  "Core/Query/ToGQuery.py",
+                      "sha256":  "5a34522ad58195c7df657e89606a40b5550523974202be2391df2ea58c986794",
+                      "size":  10303
+                  },
+                  {
+                      "path":  "Core/Query/BasicQuery.py",
+                      "sha256":  "a668ded2fe15635560b848c3abe778197983d0677074ad05252d6d7ee7a2d61a",
+                      "size":  12670
+                  },
+                  {
+                      "path":  "Core/Retriever/MixRetriever.py",
+                      "sha256":  "dd9c5fa9dedcf7c664342bc9c9e7d62c33912250f5714e5af25ce8c607aedd07",
+                      "size":  1029
+                  },
+                  {
+                      "path":  "Core/Retriever/EntitiyRetriever.py",
+                      "sha256":  "04e707de08f90fb60a69a70c0dc9fbd061b68f0587fec565cea0d698a59c7190",
+                      "size":  10116
+                  },
+                  {
+                      "path":  "Core/Retriever/ChunkRetriever.py",
+                      "sha256":  "7d02f3c25ee01cdae442d9c3671f3a80f4c58cd30b8c770c4573441e4262ce65",
+                      "size":  7551
+                  },
+                  {
+                      "path":  "Config/QueryConfig.py",
+                      "sha256":  "2ba8d568265f30521d05e369f356562455a286685a443b4ed5b13c7d08f4ca59",
+                      "size":  2810
+                  },
+                  {
+                      "path":  "Config/RetrieverConfig.py",
+                      "sha256":  "e16e5603f957f2c2063b3a27ca4e84c94c8ee0e33272b254c993f8c65dd8bef8",
+                      "size":  699
+                  },
+                  {
+                      "path":  "Option/Config2.py",
+                      "sha256":  "756ae7c65a45e217f4ab14b13e40e67163e89ee3b23bab9fc016e2dfc4909a6e",
+                      "size":  5114
+                  },
+                  {
+                      "path":  "Data/QueryDataset.py",
+                      "sha256":  "e0e1ce826553ab473b3af2e84778f6662e62c86459292aa9f1c22c320105287d",
+                      "size":  1454
+                  }
+              ]
+}

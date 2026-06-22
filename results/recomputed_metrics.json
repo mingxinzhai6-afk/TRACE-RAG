@@ -1,0 +1,23 @@
+{
+  "method": "ARC-Fuse (historical result prefix: NewG)",
+  "model": "gemini-2.5-flash-lite",
+  "graph_method": "hipporag",
+  "text_method": "bm25",
+  "limit": 200,
+  "datasets": {
+    "PopQA": {
+      "accuracy": 0.595,
+      "em": 0.585,
+      "precision": 0.5983,
+      "recall": 0.2169,
+      "f1": 0.275
+    },
+    "MuSiQue": {
+      "accuracy": 0.195,
+      "em": 0.185,
+      "precision": 0.2779,
+      "recall": 0.2595,
+      "f1": 0.2637
+    }
+  }
+}

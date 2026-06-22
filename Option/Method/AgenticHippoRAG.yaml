@@ -1,0 +1,85 @@
+################################################################################
+# AgenticHippoRAG.yaml
+#
+# HippoRAG + all three Agentic innovations:
+#   Innovation 1: Critic-driven Directed Subgraph Expansion (use_critic)
+#   Innovation 2: Answer Normalizer (use_answer_normalizer)
+#   Innovation 3: Query Router (via --enable_routing flag in agentic_main.py)
+#
+# Usage:
+#   python agentic_main.py -opt Option/Method/AgenticHippoRAG.yaml \
+#       -dataset_name datasets/Popqa --eval_limit 20
+#
+#   # With Query Routing:
+#   python agentic_main.py -opt Option/Method/AgenticHippoRAG.yaml \
+#       -dataset_name datasets/Popqa --eval_limit 20 --enable_routing
+################################################################################
+
+# LLM override
+llm:
+  api_type: "openai"
+  base_url: "https://api.chatanywhere.tech/v1"
+  model: "gemini-2.5-flash-lite"
+  api_key: "sk-CaEcKGX1G9nsji15RDYNtXrZ9ZjfoAzwKlbsucjMqUPbGqsn"
+
+# Basic Config
+use_entities_vdb: True
+use_relations_vdb: False
+llm_model_max_token_size: 32768
+use_entity_link_chunk: True
+enable_graph_augmentation: False
+
+index_name: er_graph_colbert
+vdb_type: faiss
+
+# Chunk Config
+chunk:
+  chunk_token_size: 1200
+  chunk_overlap_token_size: 100
+  token_model: gpt-3.5-turbo
+  chunk_method: chunking_by_token_size
+
+# Graph Config
+graph:
+  enable_edge_keywords: False
+  graph_type: er_graph
+  force: False
+  extract_two_step: True
+  max_gleaning: 1
+  enable_entity_description: False
+  enable_entity_type: False
+  enable_edge_description: False
+  enable_edge_name: True
+  prior_prob: 0.8
+  similarity_max: 1.0
+
+# Retrieval Config
+retriever:
+  query_type: ppr
+  enable_local: False
+  use_entity_similarity_for_ppr: False
+  top_k_entity_for_ppr: 8
+  node_specificity: True
+  damping: 0.1
+  top_k: 5
+
+# Query Config 鈥?with Agentic innovations enabled
+query:
+  query_type: qa
+  only_need_context: False
+  response_type: short-form
+  enable_hybrid_query: True
+  augmentation_ppr: False
+  level: 2
+  community_information: True
+  top_k: 20
+  naive_max_token_for_text_unit: 12000
+  local_max_token_for_text_unit: 4000
+  entities_max_tokens: 2000
+  relationships_max_tokens: 2000
+  max_ir_steps: 2
+
+  # ---- Agentic Innovations ----
+  use_answer_normalizer: true    # Innovation 2: normalize verbose answers
+  use_critic: true               # Innovation 1: Critic-driven re-retrieval
+  critic_max_rounds: 2           # Max Critic iterations

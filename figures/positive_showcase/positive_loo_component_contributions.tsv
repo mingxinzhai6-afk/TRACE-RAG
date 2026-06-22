@@ -1,0 +1,29 @@
+dataset	component	metric	positive_contribution
+PopQA	Answer normalizer	em	+38.50
+PopQA	Answer normalizer	precision	+21.46
+MuSiQue	Answer normalizer	em	+6.50
+MuSiQue	Critic	recall	+5.50
+MuSiQue	Critic	precision	+5.37
+MuSiQue	Critic	f1	+5.33
+MuSiQue	Answer normalizer	precision	+5.17
+MuSiQue	Critic	accuracy	+4.50
+MuSiQue	Critic	em	+4.00
+MuSiQue	Answer normalizer	f1	+3.59
+PopQA	Critic	accuracy	+2.50
+PopQA	Critic	precision	+2.25
+PopQA	Critic	em	+2.00
+PopQA	Answer normalizer	f1	+1.45
+MuSiQue	Multi-agent voting	precision	+1.21
+PopQA	Critic	f1	+1.04
+PopQA	Commendor	accuracy	+1.00
+PopQA	Commendor	em	+1.00
+PopQA	Commendor	precision	+1.00
+MuSiQue	Multi-agent voting	accuracy	+1.00
+MuSiQue	Multi-agent voting	f1	+0.90
+PopQA	Critic	recall	+0.83
+MuSiQue	Multi-agent voting	recall	+0.75
+MuSiQue	Answer normalizer	recall	+0.68
+PopQA	Router	em	+0.50
+MuSiQue	Multi-agent voting	em	+0.50
+PopQA	Commendor	f1	+0.22
+PopQA	Commendor	recall	+0.12
