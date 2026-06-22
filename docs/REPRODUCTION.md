@@ -31,8 +31,7 @@ The integration was checked against upstream HEAD:
 ```
 
 The original experiments were run in a locally modified DIGIMON-derived
-workspace without Git metadata. `research_backend/compatibility_manifest.json`
-records hashes of the critical local backend files for audit purposes.
+workspace without Git metadata.
 
 The upstream revision above has no license file. ARC-Fuse therefore imports
 DIGIMON as an external dependency and does not redistribute its source.

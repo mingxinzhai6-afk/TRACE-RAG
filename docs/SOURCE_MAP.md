@@ -16,6 +16,8 @@ documentation needed to run them.
 | `LICENSE` | License for the ARC-Fuse source in this repository. |
 | `SECURITY.md` | Security disclosure notes. |
 | `THIRD_PARTY_NOTICES.md` | Third-party dependency and provenance notes. |
+| `CHANGELOG.md` | Project history and cleanup notes. |
+| `CONTRIBUTING.md` | Contribution guidelines. |
 
 ## Standalone Reference Implementation
 
@@ -62,4 +64,3 @@ documentation needed to run them.
 | `docs/` | Reproduction, dataset, and integration notes. |
 | `tests/` | Offline sanity tests. |
 | `scripts/scan_secrets.py` | Local repository secret scan helper. |
-

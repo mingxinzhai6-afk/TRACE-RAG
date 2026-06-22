@@ -24,6 +24,8 @@ experiment trees and large generated artifacts are intentionally omitted from Gi
 - `examples/` - offline sample inputs.
 - `docs/` - reproduction, dataset, and source-map notes.
 - `tests/` - offline sanity tests.
+- `CHANGELOG.md` - project history and cleanup notes.
+- `CONTRIBUTING.md` - contribution guidelines.
 
 For a concise file-by-file map, see [docs/SOURCE_MAP.md](docs/SOURCE_MAP.md).
 
