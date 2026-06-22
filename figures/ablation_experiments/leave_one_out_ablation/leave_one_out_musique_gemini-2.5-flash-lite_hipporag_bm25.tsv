@@ -1,9 +1,0 @@
-variant	label	n	accuracy	em	precision	recall	f1	source
-full	Full NewG	200	19.50	18.50	27.79	25.95	26.37	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite\Results\results.score.jsonl
-no_router	w/o Router	200	22.50	20.50	31.17	29.14	29.56	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_router\Results\results.score.jsonl
-no_regen	w/o Re-Generator	200	20.50	19.50	29.42	26.40	27.15	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_regen\Results\results.score.jsonl
-no_critic	w/o Critic	200	15.00	14.50	22.42	20.45	21.04	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_critic\Results\results.score.jsonl
-no_commendor	w/o Commendor	200	20.00	19.50	29.54	26.87	27.62	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_abl_no_commendor\Results\results.score.jsonl
-no_normalizer	w/o Answer Normalizer	200	23.00	12.00	22.62	25.27	22.78	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_abl_critic\Results\results.score.jsonl
-no_disambiguation	w/o Entity Disambiguation	200	19.50	18.50	27.79	25.95	26.37	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_loo_no_disambiguation\Results\results.score.jsonl
-single_agent	Single judge/voter	200	18.50	18.00	26.58	25.20	25.47	output\datasets\musique\NewG_hipporag_bm25_gemini-2.5-flash-lite_abl_single_agent\Results\results.score.jsonl

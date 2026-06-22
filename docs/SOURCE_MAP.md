@@ -1,18 +1,19 @@
 # Source Map
 
-This release package is intentionally compact. It keeps the files needed to run,
-inspect, and reproduce the paper's ARC-Fuse experiments.
+This repository keeps only the final ARC-Fuse code paths and the supporting
+documentation needed to run them.
 
 ## Top-Level Files
 
 | File | Purpose |
 | --- | --- |
-| `README.md` | Release overview and entry points. |
-| `arc_fuse_main.py` | Convenience launcher for the release package. |
+| `README.md` | Repository overview and usage notes. |
+| `arc_fuse_main.py` | Paper backend launcher that expects a compatible DIGIMON checkout. |
+| `run_demo.py` | Standalone offline demo entry point. |
 | `pyproject.toml` | Package metadata for the standalone source. |
 | `.env.example` | Environment variable template. |
 | `CITATION.cff.template` | Citation metadata template. |
-| `LICENSE` | License for the ARC-Fuse source in this release. |
+| `LICENSE` | License for the ARC-Fuse source in this repository. |
 | `SECURITY.md` | Security disclosure notes. |
 | `THIRD_PARTY_NOTICES.md` | Third-party dependency and provenance notes. |
 
@@ -52,10 +53,13 @@ inspect, and reproduce the paper's ARC-Fuse experiments.
 
 | File | Purpose |
 | --- | --- |
+| `configs/arc_fuse.example.json` | Standalone demo config. |
+| `research_backend/configs/` | Paper backend configs. |
 | `research_backend/scripts/run_real_smoke.sh` | One-question end-to-end smoke test. |
 | `research_backend/scripts/run_main_experiments.sh` | Full main experiment grid. |
 | `research_backend/scripts/run_ablation.sh` | Ablation runner. |
-| `configs/arc_fuse.example.json` | Standalone demo config. |
-| `research_backend/configs/` | Paper backend configs. |
 | `examples/` | Offline sample corpus, graph, and questions. |
+| `docs/` | Reproduction, dataset, and integration notes. |
+| `tests/` | Offline sanity tests. |
+| `scripts/scan_secrets.py` | Local repository secret scan helper. |
 

@@ -1,7 +1,7 @@
 # ARC-Fuse
 
 ARC-Fuse stands for **Adaptive Routing and Critic-guided Evidence Fusion**.
-It is an agentic graph-text RAG system built for complex QA, with:
+It is an agentic graph-text RAG system for complex QA, with:
 
 - query understanding and graph/text/hybrid routing;
 - graph and text retriever banks;
@@ -10,19 +10,18 @@ It is an agentic graph-text RAG system built for complex QA, with:
 - structured Critic feedback for directed re-retrieval;
 - auxiliary error diagnosis and answer normalization.
 
-The project was previously called `NewG` during experimentation. Historical
-result directories keep the `NewG_*` prefix to preserve the paper audit trail.
+This repository keeps the final ARC-Fuse codebase only. Historical GraphRAG/NewG
+experiment trees and large generated artifacts are intentionally omitted from GitHub.
 
-## What This Release Contains
+## Repository Layout
 
-This repository snapshot is organized as a paper-friendly release package:
-
-- `src/arc_fuse/` - standalone reference implementation for offline smoke tests.
+- `src/arc_fuse/` - standalone reference implementation.
 - `research_backend/arc_fuse_digimon/` - paper backend used for the reported experiments.
-- `configs/` - standalone demo configuration.
+- `arc_fuse_main.py` - convenience entry point for the paper backend.
+- `run_demo.py` - standalone offline demo entry point.
+- `configs/` - demo configuration.
 - `research_backend/configs/` - experiment and ablation configurations.
-- `examples/` - synthetic offline demo inputs.
-- `results/` - archived paper result snapshots.
+- `examples/` - offline sample inputs.
 - `docs/` - reproduction, dataset, and source-map notes.
 - `tests/` - offline sanity tests.
 
@@ -30,15 +29,10 @@ For a concise file-by-file map, see [docs/SOURCE_MAP.md](docs/SOURCE_MAP.md).
 
 ## Quick Start
 
-### 1. Install the standalone package
+### Standalone demo
 
 ```bash
 python -m pip install -e .
-```
-
-### 2. Run the offline demo
-
-```bash
 arc-fuse-demo \
   --config configs/arc_fuse.example.json \
   --corpus examples/corpus.jsonl \
@@ -47,7 +41,7 @@ arc-fuse-demo \
   --offline
 ```
 
-Without installation:
+Or run without installing:
 
 ```bash
 python run_demo.py \
@@ -58,13 +52,11 @@ python run_demo.py \
   --offline
 ```
 
-The offline demo validates orchestration only. It does not reproduce the paper
-metrics.
+The offline demo validates orchestration only. It does not reproduce paper metrics.
 
-## Paper Backend
+### Paper backend
 
-The full backend requires a compatible DIGIMON checkout and its Python
-environment.
+The paper backend requires a compatible DIGIMON checkout and Python environment.
 
 ```bash
 export DIGIMON_ROOT="/path/to/GraphRAG"
@@ -78,20 +70,6 @@ Run one end-to-end smoke test:
 
 ```bash
 bash research_backend/scripts/run_real_smoke.sh
-```
-
-Run the main PopQA and MuSiQue grid:
-
-```bash
-LIMIT=200 DATASETS="datasets/Popqa datasets/musique" \
-  bash research_backend/scripts/run_main_experiments.sh
-```
-
-Run the HippoRAG+BM25 ablations:
-
-```bash
-DATASET=datasets/musique LIMIT=200 \
-  bash research_backend/scripts/run_ablation.sh
 ```
 
 Reproduction details are documented in [docs/REPRODUCTION.md](docs/REPRODUCTION.md).
@@ -119,38 +97,18 @@ datasets/
 
 See [docs/DATASETS.md](docs/DATASETS.md) for the sample ratio notes used in the paper.
 
-## Core Source Map
-
-The most important source files are:
-
-- `arc_fuse_main.py` - convenience entry point for the release package.
-- `src/arc_fuse/cli.py` - standalone CLI.
-- `src/arc_fuse/pipeline.py` - standalone orchestration.
-- `src/arc_fuse/fusion.py` - evidence fusion helpers.
-- `src/arc_fuse/retrievers.py` - lightweight retriever adapters.
-- `research_backend/arc_fuse_digimon/runner.py` - paper-run launcher.
-- `research_backend/arc_fuse_digimon/engine.py` - paper pipeline control flow.
-- `research_backend/arc_fuse_digimon/query_understanding.py` - routing logic.
-- `research_backend/arc_fuse_digimon/regeneration.py` - judge/vote regeneration.
-- `research_backend/arc_fuse_digimon/critic.py` - Critic decisions.
-- `research_backend/arc_fuse_digimon/commendor.py` - auxiliary failure diagnosis.
-- `research_backend/arc_fuse_digimon/normalizer.py` - answer normalization.
-
-The full source map lives in [docs/SOURCE_MAP.md](docs/SOURCE_MAP.md).
-
 ## Citation
 
-If you use ARC-Fuse in academic work, please cite the paper and keep the
-historical `NewG` result names unchanged when referring to archived outputs.
+If you use ARC-Fuse in academic work, please cite the paper.
 
 The recommended citation metadata template is [CITATION.cff.template](CITATION.cff.template).
 
 ## Security And Licensing
 
-Before publishing this repository, review the following files:
+Before publishing this repository, review:
 
 - `SECURITY.md`
 - `THIRD_PARTY_NOTICES.md`
 - `LICENSE`
 
-No API key is stored in this release package.
+No API key is stored in this repository.

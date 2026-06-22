@@ -1,4 +1,0 @@
-{"id":"edge-1","source":"Paris","relation":"capital_of","target":"France"}
-{"id":"edge-2","source":"Eiffel Tower","relation":"located_in","target":"Paris"}
-{"id":"edge-3","source":"Jane Austen","relation":"wrote","target":"Pride and Prejudice"}
-{"id":"edge-4","source":"Pride and Prejudice","relation":"published_in","target":"1813"}
