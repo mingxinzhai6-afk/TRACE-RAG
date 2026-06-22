@@ -6,6 +6,8 @@
 - Removed historical GraphRAG/NewG experiment trees and archived release snapshots.
 - Updated the README and source map to reflect the final repository layout.
 - Removed backend compatibility audit artifacts that were only needed for historical provenance.
+- Reduced `research_backend/configs/` to the single runtime config used by the final backend.
+- Removed the historical ablation runner and its companion configs.
 
 ## 0.1.0
 

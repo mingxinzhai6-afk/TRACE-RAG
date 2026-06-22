@@ -20,7 +20,7 @@ experiment trees and large generated artifacts are intentionally omitted from Gi
 - `arc_fuse_main.py` - convenience entry point for the paper backend.
 - `run_demo.py` - standalone offline demo entry point.
 - `configs/` - demo configuration.
-- `research_backend/configs/` - experiment and ablation configurations.
+- `research_backend/configs/` - paper backend runtime configuration.
 - `examples/` - offline sample inputs.
 - `docs/` - reproduction, dataset, and source-map notes.
 - `tests/` - offline sanity tests.
@@ -72,6 +72,13 @@ Run one end-to-end smoke test:
 
 ```bash
 bash research_backend/scripts/run_real_smoke.sh
+```
+
+Run the main PopQA and MuSiQue grid:
+
+```bash
+LIMIT=200 DATASETS="datasets/Popqa datasets/musique" \
+  bash research_backend/scripts/run_main_experiments.sh
 ```
 
 Reproduction details are documented in [docs/REPRODUCTION.md](docs/REPRODUCTION.md).

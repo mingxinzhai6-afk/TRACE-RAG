@@ -56,10 +56,9 @@ documentation needed to run them.
 | File | Purpose |
 | --- | --- |
 | `configs/arc_fuse.example.json` | Standalone demo config. |
-| `research_backend/configs/` | Paper backend configs. |
+| `research_backend/configs/arc_fuse.yaml` | Paper backend runtime config. |
 | `research_backend/scripts/run_real_smoke.sh` | One-question end-to-end smoke test. |
 | `research_backend/scripts/run_main_experiments.sh` | Full main experiment grid. |
-| `research_backend/scripts/run_ablation.sh` | Ablation runner. |
 | `examples/` | Offline sample corpus, graph, and questions. |
 | `docs/` | Reproduction, dataset, and integration notes. |
 | `tests/` | Offline sanity tests. |

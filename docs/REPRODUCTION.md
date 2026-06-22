@@ -93,23 +93,6 @@ The grid contains:
 - text: `bm25`, `vdb`;
 - six ARC-Fuse combinations per dataset.
 
-## Ablations
-
-```bash
-DATASET=datasets/musique LIMIT=200 \
-  bash research_backend/scripts/run_ablation.sh
-```
-
-Included configurations:
-
-- simple generation;
-- adaptive routing;
-- multi-agent re-generation;
-- Critic and Commendor;
-- full ARC-Fuse;
-- no Commendor;
-- one judge and one voter.
-
 ## Outputs
 
 New outputs are written below the DIGIMON workspace:
@@ -130,6 +113,5 @@ python research_backend/evaluate.py \
   --limit 200
 ```
 
-Reported paper metrics are archived in
-`results/legacy_newg_results_summary.tsv`. The filename intentionally retains
-the historical name.
+Reported paper metrics are archived in `results/legacy_newg_results_summary.tsv`.
+The filename intentionally retains the historical name.
