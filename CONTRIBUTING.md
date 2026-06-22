@@ -2,13 +2,14 @@
 
 ## Scope
 
-This repository tracks the final ARC-Fuse codebase. Please avoid reintroducing
-historical experiment trees, generated artifacts, or large result dumps unless
-they are required for reproducibility and explicitly documented.
+This repository tracks the final ARC-Fuse codebase. Changes should preserve
+that scope and avoid reintroducing historical experiment trees, generated
+artifacts, or large result dumps unless they are required for reproducibility
+and explicitly documented.
 
-## Before You Send Changes
+## Before You Open A PR
 
-- Keep changes focused and small.
+- Keep changes focused and reviewable.
 - Update `README.md` and `docs/SOURCE_MAP.md` when you move or rename files.
 - Do not commit API keys, secrets, dataset dumps, or local output directories.
 - Prefer the existing `src/arc_fuse/` and `research_backend/arc_fuse_digimon/`
@@ -16,7 +17,7 @@ they are required for reproducibility and explicitly documented.
 
 ## Local Checks
 
-Run the simplest relevant check before pushing:
+Run the simplest relevant checks before pushing:
 
 ```bash
 python -m pip install -e .
