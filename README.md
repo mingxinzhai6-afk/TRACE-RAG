@@ -9,9 +9,9 @@ feedback, failure attribution, and answer normalization in one iterative
 closed loop.
 
 > This repository contains the reproducible implementation and experiment
-> backend for the TRACE-RAG paper. The standalone package is named `arc-fuse`
-> for historical compatibility; it implements the same method and is referred
-> to as TRACE-RAG in the paper.
+> backend for the TRACE-RAG paper. The installable package is `trace-rag`, and
+> its command-line demo is `trace-rag-demo`. The `arc_fuse` directory name is
+> retained only as an internal Python module path for the current source tree.
 
 ## Method overview
 
@@ -37,7 +37,7 @@ reproducing the paper's reported metrics.
 
 ```bash
 python -m pip install -e .
-arc-fuse-demo \
+trace-rag-demo \
   --config configs/arc_fuse.example.json \
   --corpus examples/corpus.jsonl \
   --graph examples/graph.jsonl \

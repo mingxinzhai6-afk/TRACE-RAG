@@ -14,7 +14,7 @@ from .retrievers import GraphTripleRetriever, LexicalRetriever, load_jsonl
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Run the standalone ARC-Fuse reference pipeline."
+        description="Run the standalone TRACE-RAG reference pipeline."
     )
     parser.add_argument("--config", required=True, help="JSON configuration path")
     parser.add_argument("--corpus", required=True, help="Corpus JSONL path")
