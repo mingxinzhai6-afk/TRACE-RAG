@@ -16,6 +16,7 @@ venv/
 build/
 dist/
 output/
+figures/generated_results/
 logs/
 datasets/
 newg_logs/
