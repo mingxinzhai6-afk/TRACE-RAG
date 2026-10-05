@@ -10,7 +10,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "figures" / "generated_results"
-DEFAULT_PAIRED_DATA = ROOT / "data" / "plotting" / "paired_retriever_deltas.tsv"
+DEFAULT_PAIRED_DATA = ROOT / "Data" / "plotting" / "paired_retriever_deltas.tsv"
 OUT_B = DEFAULT_OUT
 PAIRED_DATA = DEFAULT_PAIRED_DATA
 

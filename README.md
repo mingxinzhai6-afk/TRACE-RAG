@@ -130,7 +130,7 @@ python scripts/draw_paper_result_figures.py
 
 Figures are written to `figures/generated_results/`. The default input table
 for the paired-retriever heatmap is
-`data/plotting/paired_retriever_deltas.tsv`; use `--output-dir` and
+`Data/plotting/paired_retriever_deltas.tsv`; use `--output-dir` and
 `--paired-data` to select another output directory or result table. The script
 recreates the MuSiQue metric-gain, F1-lift, main-experiment, paired-retriever,
 and leave-one-out figures used in the paper.
@@ -144,7 +144,7 @@ and leave-one-out figures used in the paper.
 - `datasets/` — local dataset files (not bundled in full).
 - `docs/` — reproduction and dataset notes.
 - `figures/` — paper figures, including the editable Visio architecture source.
-- `data/plotting/` — compact tabular inputs used by the result-figure script.
+- `Data/plotting/` — compact tabular inputs used by the result-figure script.
 - `requirements-figures.txt` — plotting-only Python dependencies.
 - `tests/` — lightweight checks for the standalone implementation.
 
